@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse 
 
+import requests 
+
+
 # Create your views here.
 def home(request):
-    return HttpResponse("Hello world!")
+    return render(request, 'mysite/index.html')
 
 def alert(request):
-	return HttpResponse("Alert page!")
+    return render(request, 'cookie-alert/cookie-alert.html')

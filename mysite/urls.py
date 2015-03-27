@@ -9,6 +9,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     #url(r'^admin/', include(admin.site.urls)),
-    url(r'^cookie_alert/', include('cookie_alert.urls'), name='cookie_alert_index'),
     url(r'^$', 'views.views.home', name='home'),
+    url(r'^cookie-alert/', include('cookie-alert.urls'), name='cookie-alert-index'),
 )
